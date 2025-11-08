@@ -1,0 +1,199 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001192103__create_geo_continents_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 2
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193025__create_geo_regions_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 3
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193445__create_users_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 4
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193503__create_members_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 5
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193552__create_members_profile_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 6
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193617__create_members_access_logs_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 7
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193632__create_members_following_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 8
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193725__create_members_followers_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 9
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193855__create_members_activation_codes_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 10
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193924__create_posts_categories_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 11
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001193958__create_posts_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 12
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001200512__create_admins_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 13
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001200755__create_admins_profile_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 14
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001201031__create_admins_access_logs_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 15
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001201559__create_members_notification_types_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 16
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001201707__create_members_notifications_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 17
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001201912__create_members_moderation_types_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 18
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001202129__create_members_moderations_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 19
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001224345__create_posts_report_types_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 20
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001224713__create_posts_reports_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 21
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001225411__create_posts_votes_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'
+  - changeSet:
+      id: 22
+      author: developer
+      changes:
+        - sqlFile:
+            path: db/migrations/V20251001225538__create_posts_visits_table.sql
+            relativeToChangelogFile: false
+            splitStatements: true
+            endDelimiter: ';'

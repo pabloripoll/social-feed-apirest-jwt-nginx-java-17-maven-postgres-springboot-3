@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS geo_regions (
+  id BIGSERIAL PRIMARY KEY,
+  continent_id BIGINT NOT NULL,
+  name VARCHAR(64) NOT NULL,
+  created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+  updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
+  CONSTRAINT uniq_geo_regions_name UNIQUE (name),
+  CONSTRAINT fk_geo_regions_continent FOREIGN KEY (continent_id) REFERENCES geo_continents(id) ON DELETE CASCADE
+);
