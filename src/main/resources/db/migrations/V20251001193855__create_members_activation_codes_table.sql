@@ -6,5 +6,5 @@ CREATE TABLE IF NOT EXISTS members_activation_codes (
   created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
   updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
   CONSTRAINT uniq_members_activation_codes_code UNIQUE (code),
-  CONSTRAINT fk_members_activation_codes_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+  CONSTRAINT fk_members_activation_codes_user_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );

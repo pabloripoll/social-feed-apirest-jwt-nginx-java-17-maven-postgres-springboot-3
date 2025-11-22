@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS posts (
+CREATE TABLE IF NOT EXISTS feed_posts (
   id BIGSERIAL PRIMARY KEY,
   uid BIGINT NOT NULL,
   user_id BIGINT NOT NULL,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS posts (
   created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
   updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
   CONSTRAINT uniq_posts_uid UNIQUE (uid),
-  CONSTRAINT fk_posts_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-  CONSTRAINT fk_posts_region FOREIGN KEY (region_id) REFERENCES geo_regions(id) ON DELETE CASCADE,
-  CONSTRAINT fk_posts_category FOREIGN KEY (category_id) REFERENCES posts_categories(id) ON DELETE CASCADE
+  CONSTRAINT fk_feed_posts_user_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  CONSTRAINT fk_feed_posts_region_id FOREIGN KEY (region_id) REFERENCES geo_regions(id) ON DELETE CASCADE,
+  CONSTRAINT fk_feed_category FOREIGN KEY (category_id) REFERENCES feed_categories(id) ON DELETE CASCADE
 );

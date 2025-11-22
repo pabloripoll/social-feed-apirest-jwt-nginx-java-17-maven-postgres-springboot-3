@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS members_access_logs (
   requests_count INTEGER NOT NULL DEFAULT 0,
   payload JSON,
   token TEXT NOT NULL,
-  CONSTRAINT fk_members_access_logs_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+  CONSTRAINT fk_members_access_logs_user_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 
 CREATE INDEX IF NOT EXISTS idx_members_access_logs_expires_at ON members_access_logs (expires_at);

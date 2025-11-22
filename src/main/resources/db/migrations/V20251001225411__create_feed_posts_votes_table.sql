@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS posts_votes (
+CREATE TABLE IF NOT EXISTS feed_posts_votes (
   id BIGSERIAL PRIMARY KEY,
   user_id BIGINT NOT NULL,
   post_id BIGINT NOT NULL,
@@ -7,6 +7,6 @@ CREATE TABLE IF NOT EXISTS posts_votes (
   refresh_count INTEGER NOT NULL DEFAULT 0,
   created_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
   updated_at TIMESTAMP WITHOUT TIME ZONE NOT NULL,
-  CONSTRAINT fk_posts_votes_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-  CONSTRAINT fk_posts_votes_post FOREIGN KEY (post_id) REFERENCES posts(id) ON DELETE CASCADE
+  CONSTRAINT fk_feed_posts_votes_user_id FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+  CONSTRAINT fk_feed_posts_votes_post_id FOREIGN KEY (post_id) REFERENCES feed_posts(id) ON DELETE CASCADE
 );

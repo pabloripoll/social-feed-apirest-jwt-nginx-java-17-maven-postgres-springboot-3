@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS posts_report_types (
+CREATE TABLE IF NOT EXISTS feed_report_types (
   id BIGSERIAL PRIMARY KEY,
   key VARCHAR(64) NOT NULL,
   title VARCHAR(64) NOT NULL,
